@@ -81,4 +81,13 @@ public class SoqlDemo {
 
 }
 }
+
+    public static void accountFilter_SOQL(string accountNameFilter) {
+        accountNameFilter = '%' + accountNameFilter + '%';
+        list<account> listAcc = [SELECT Id, Name FROM account WHERE name LIKE : accountNameFilter];
+        system.debug('list acc ' + listAcc);
+    }
+    
+    
+   
 }
