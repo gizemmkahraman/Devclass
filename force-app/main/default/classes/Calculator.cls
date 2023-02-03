@@ -1,5 +1,5 @@
 public class Calculator {
-
+ //parameterless method.
 public void publicMessage(){
 
     system.debug('public method called.');
@@ -8,7 +8,7 @@ public void publicMessage(){
     privateMessage1();
     system.debug('called private method.');
 }
-
+ //parameterless method.
 private void privateMessage1(){
 
     system.debug('private method called.');
