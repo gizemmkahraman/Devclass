@@ -9,6 +9,7 @@ public void publicMessage(){
     system.debug('called private method.');
 }
  //parameterless method.
+ //this is a private method whic prints some default message
 private void privateMessage1(){
 
     system.debug('private method called.');
