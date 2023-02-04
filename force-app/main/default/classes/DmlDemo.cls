@@ -20,7 +20,7 @@ public class DmlDemo {
         ac.name = 'Salesforce';
         system.debug('before inserting ac ==> ' +ac);
         insert ac;
-        system.debug('record is inserted ac ==> ' + ac);
+        system.debug('record is updated ac ==> ' + ac);
         //we now have ID in account instance 'ac'.
         //we need ID if we want to update a record.
         ac.Name= 'Salesforce Inc.';
