@@ -8,3 +8,6 @@ DmlDemo.dmlMultipleRecordInsert_right1();
 DmlDemo.dmlMultipleRecordInsert_right2();
 DmlDemo.dmlDemoMultipleUpdate_right1();
 DmlDemo.dmlDemoMultipleUpdate_right2();
+
+
+delete [select id from account where createddate = TODAY limit 70];
