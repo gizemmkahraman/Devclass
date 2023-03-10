@@ -55,7 +55,7 @@ public class AccountTriggerHandler {
                 }
             }
         }
-    }
+    
 
        /*public static void updateBillingCityforAllContacts(list<account> accTriggerNew, list<account> accTriggerOld, map<id,account> accTriggerNewMap, map<id,account> accTriggerOldMap) {
          set<id> accId = new set<id>();
@@ -72,3 +72,22 @@ public class AccountTriggerHandler {
          }
         }
     }*/
+   /* public static void tryCatchContact(list<account> triggerNew){
+        try {
+            List<Contact> conList = new List<Contact>();
+            for (Account acc : triggerNew) {
+            contact con = new contact();
+            con.LastName = 'Star';
+            con.AccountId = acc.Id;
+            conList.add(con);
+            }
+            if (!conList.isEmpty()) {
+                insert conList;
+            }
+    }   catch (Exception ex) {
+        for (Account acc : triggerNew) {
+            acc.addError('Error! Missing status field on contact.');
+        }
+    }
+    } */
+}

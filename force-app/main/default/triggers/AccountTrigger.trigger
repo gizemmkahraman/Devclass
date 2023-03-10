@@ -12,6 +12,9 @@ trigger AccountTrigger on Account (before insert, before update, after insert, a
         //call handler method to update vip of all contacts.
         AccountTriggerHandler.updateVIPforAllContacts(Trigger.New, Trigger.Old, Trigger.NewMap, Trigger.Oldmap);
     }
+    //if (Trigger.isBefore && Trigger.isInsert) {
+       // AccountTriggerHandler.tryCatchContact(trigger.new);
+    }
 
 
 
@@ -206,7 +209,7 @@ trigger AccountTrigger on Account (before insert, before update, after insert, a
     }
 
     */
-}
+
 
 
 
