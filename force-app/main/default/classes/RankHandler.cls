@@ -32,7 +32,6 @@ public class RankHandler {
             }
             when else {
                 prize = 'GOOD JOB BUDDY';
-                
             }
         }
 

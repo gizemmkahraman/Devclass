@@ -1,5 +1,6 @@
 public class Dml_Assign {
-    public static void insert_dml(){ 
+    public static void insert_dml(){
+        
         account acc = new account();
         acc.Name = 'Gizem Assignment';
         insert acc;
@@ -13,5 +14,10 @@ public class Dml_Assign {
         insert ac;
         ac.Name= 'Account updated';
         update ac;
+
+
     }  
+
+
+
     }

@@ -1,13 +1,13 @@
 public class Datetime_Assignment {
     public void diffofDate(){
-    date varTomorrowDate = date.newInstance(2023, 1, 17);
-    system.debug('Tomorrow day is ' + varTomorrowDate);
+        date varTomorrowDate = date.newInstance(2023, 1, 17);
+        system.debug('Tomorrow day is ' + varTomorrowDate);
 
-    date  varTodaysDate = date.newInstance(2023, 1, 16);
-    system.debug('Tomday day is ' + varTodaysDate);
+        date  varTodaysDate = date.newInstance(2023, 1, 16);
+        system.debug('Tomday day is ' + varTodaysDate);
 
-    integer betweendays = varTodaysDate.daysBetween(varTomorrowDate);
-    system.debug('The difference of ' + varTomorrowDate + ' and ' + varTodaysDate + ' is ' + betweendays);
+        integer betweendays = varTodaysDate.daysBetween(varTomorrowDate);
+        system.debug('The difference of ' + varTomorrowDate + ' and ' + varTodaysDate + ' is ' + betweendays);
     }
 public void timeCheck(){
 datetime varTomorrowDatetime = datetime.newInstance(2023, 1, 17, 7, 0, 0);

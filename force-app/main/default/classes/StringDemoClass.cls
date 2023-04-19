@@ -22,7 +22,7 @@ public class StringDemoClass {
 
      Boolean containsSalesforce = sessionDescription.contains('salesforce');
      system.debug('contains salesforce?' + containsSalesforce );
-    //4.trim
+
      string username = '   gizem  k   ';
      system.debug('username length is ---> ' + username.length());
 

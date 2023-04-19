@@ -7,6 +7,8 @@ public class Car {
     //default is private.
     integer maxSpeed = 140;
 
+
+
     public void switchOn(){
      system.debug('starting the car noww!');
     }

@@ -4,17 +4,6 @@ trigger SalesforceProjectTrigger on Salesforce_Project__c (before insert, after 
    if(!ts.enabled__c){
     return;
    }
-   /*import account anad contact records 100 000
- => account trigger and contact trigger are running.
- => we DONT want our triggers to run while importing.
-
- Trigger Switch
- -custom settiings
-   -we CANNOT move data to another org. We have to re-create data.
-   -we CAN write DML to create data.
- -custom metadata
-   - we CAN move data also
-   - we CANNOT write DML */
    
    
     if (Trigger.isafter && trigger.isinsert) {

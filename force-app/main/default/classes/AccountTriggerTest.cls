@@ -45,10 +45,3 @@ public class AccountTriggerTest {
         update listAcc;
     }
 }
-
-
-
-
-
-
-

@@ -10,6 +10,7 @@ public Class ConditionClass_Assignment {
         }
           return output_Month;
         }
+
     public string caseMethod(string inputMonth){
         string output_Quarter = 'Enter a proper Month name';
         switch on inputMonth {

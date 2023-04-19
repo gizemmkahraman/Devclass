@@ -45,6 +45,8 @@ public class DMLDemoAgainTest {
          Account acc = new account();
          acc.Name = 'Softinnovas';
          insert acc;
+
+
         //2. call method
         DmlDemoAgain.dmlInsertDemo_stndObj2();
 
@@ -62,17 +64,11 @@ public class DMLDemoAgainTest {
         //create project
         Salesforce_Project__c sp = new Salesforce_Project__c();
         sp.Project_Name__c = 'test project';
-        insert sp;//5 sec cpu time is consumed here
+        insert sp;
 
         //call method
-        //to actually test this method we now have only 5 sec cpu time available.
-        Test.startTest();
-        //RESET GOVERNOR LIMIT. we will again have 10 sec of cpu time for rest of the code. 
         DmlDemoAgain.dmlDemoInsert_cstmObj2();
-        Test.stopTest();
 
-        // continue with previous gov limit. 5 sec cpu time for rest of the code.
-        
         //verify.
         //soql
         Salesforce_Ticket__c sst = [select subject__c, priority__c, 
