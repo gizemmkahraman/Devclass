@@ -1,14 +1,14 @@
 <template>
-    <lightning-card title="Industry Picklist" icon-name="action:share_poll">
+    <lightning-card title="Stage Picklist" icon-name="action:share_poll">
         <div class="slds-var-m-around_medium">
             <lightning-combobox
-                label="Select Industry"
-                value={selectedIndustry}
-                options={industryOptions}
+                label="Select Stage"
+                value={selectedStage}
+                options={stageOptions}
                 onchange={changeHandler}>
             </lightning-combobox>
             <div class="slds-var-m-top_small slds-text-color_success">
-                Selected Industry : <span class="slds-text-color_error">{selectedIndustry}</span>
+                Selected Stage : <span class="slds-text-color_error"><strong>{selectedStage}</strong></span>
             </div>
         </div>
     </lightning-card>

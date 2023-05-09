@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Product Form" icon-name="standard:product">
+        <div class="slds-var-m-around_medium">
+            <form class="productform">
+                <!--Title-->
+                <lightning-input
+                    type="text"
+                    label="Title"
+                    name="Title__c"
+                    onblur={changeHandler}>
+                </lightning-input>
+                <!--Brand-->
+                <lightning-combobox
+                    options={brandOptions}
+                    type="text"
+                    label="Brand"
+                    name="Brand__c"
+                    onblur={changeHandler}>
+                </lightning-combobox>
+                <!--Category-->
+                <!--Price-->
+                <!--Description-->
+            </form>
+        </div>
+    </lightning-card>
+</template>
