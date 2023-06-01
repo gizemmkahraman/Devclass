@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Slider" icon-name="standard:slider">
+        <lightning-button
+            label="Reset"
+            variant="destructive"
+            onclick={resetHandler}
+            slot="actions">
+        </lightning-button>
+        <div class="slds-var-m-around_medium">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input
+                        type="text"
+                        label="Slider Label"
+                        name="Slider Label"
+                        onchange={changeHandler}>
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input
+                    type="number"
+                    label="Slider Value"
+                    name="Slider Value"
+                    onchange={changeHandler}>
+                </lightning-input>
+                </div>
+            </div>
+            <div>
+                <c-slider
+                slider-label={selectedLabel}
+                slider-value={selectedValue}>
+                </c-slider>
+            </div>
+        </div>
+    </lightning-card>
+</template>

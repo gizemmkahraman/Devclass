@@ -1,0 +1,14 @@
+.message-header {
+    background: #C6C6C6;
+    padding: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.message-body {
+    background: #5db3ad;
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
+    margin-top: 6px;
+}

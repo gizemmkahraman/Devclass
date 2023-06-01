@@ -1,0 +1,11 @@
+<template>
+    <template lwc:if={opportunities}>
+        <template for:each={opportunities} for:item="opp">
+            <div key={opp.Id} class="'slds-var-m-bottom_medium">
+                <strong>{opp.Name}</strong><br/>
+                {opp.Industry}, {opp.Amount}
+
+            </div>
+        </template>
+    </template>
+</template>
